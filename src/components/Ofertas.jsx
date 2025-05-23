@@ -38,7 +38,7 @@ function Ofertas() {
   return (
     <section className="ofertas-section" id="ofertas">
       <h2 className="ofertas-title">
-        Ofertas del Mes <FaShoppingCart className="inline-icon" />
+        <FaShoppingCart className="inline-icon" /> Ofertas del Mes
       </h2>
       <p className="ofertas-subtitle">
         Aprovecha estas promociones exclusivas por tiempo limitado 🔥

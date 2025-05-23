@@ -1,5 +1,5 @@
 .ofertas-section {
-  background-color: #f9fafb;
+  background: linear-gradient(to right, #f0fdf4, #ffffff); /* verde claro a blanco */
   color: #1f2937;
   padding: 4rem 1rem;
 }
@@ -11,6 +11,15 @@
   margin-bottom: 0.5rem;
   font-family: 'Poppins', sans-serif;
   color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.inline-icon {
+  color: #10b981;
+  font-size: 1.3rem;
 }
 
 .ofertas-subtitle {
@@ -19,11 +28,6 @@
   color: #6b7280;
   margin-bottom: 2.5rem;
   font-weight: 500;
-}
-
-.inline-icon {
-  margin-left: 0.5rem;
-  color: #fbbf24;
 }
 
 .ofertas-grid {
@@ -79,6 +83,7 @@
   font-weight: 600;
   padding: 0.3rem 0.8rem;
   border-radius: 9999px;
+  box-shadow: 0 3px 10px rgba(16, 185, 129, 0.25);
 }
 
 .oferta-nombre {
