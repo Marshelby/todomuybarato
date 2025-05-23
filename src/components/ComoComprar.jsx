@@ -1,12 +1,43 @@
+import "./ComoComprar.css";
+import { FaBoxOpen, FaWhatsapp, FaTruck, FaCheckCircle } from "react-icons/fa";
+
 function ComoComprar() {
+  const pasos = [
+    {
+      icono: <FaBoxOpen className="paso-icono" />,
+      titulo: "Elige tus productos",
+      texto: "Navega por nuestras ofertas y selecciona lo que necesitas."
+    },
+    {
+      icono: <FaWhatsapp className="paso-icono" />,
+      titulo: "Escríbenos por WhatsApp",
+      texto: "Confirma stock y detalles con nuestro equipo."
+    },
+    {
+      icono: <FaTruck className="paso-icono" />,
+      titulo: "Coordinamos el envío",
+      texto: "Delivery gratis desde $10.000 o retiro en persona."
+    },
+    {
+      icono: <FaCheckCircle className="paso-icono" />,
+      titulo: "¡Listo!",
+      texto: "Recibe tus productos y disfruta tu compra."
+    }
+  ];
+
   return (
-    <section className="bg-gray-100 py-16 px-4">
-      <h2 className="text-3xl font-bold text-center mb-10">¿Cómo Comprar?</h2>
-      <div className="max-w-3xl mx-auto space-y-6 text-lg text-gray-700">
-        <p>1. Elige los productos que más te gusten.</p>
-        <p>2. Escríbenos por WhatsApp para confirmar stock.</p>
-        <p>3. Coordinamos el retiro o delivery (gratis desde $10.000).</p>
-        <p>4. ¡Listo! Así de simple es comprar con nosotros.</p>
+    <section className="comprar-section" id="comprar">
+      <div className="comprar-container">
+        <h2 className="comprar-titulo">¿Cómo Comprar?</h2>
+        <div className="comprar-grid">
+          {pasos.map((paso, index) => (
+            <div className="paso-card" key={index}>
+              {paso.icono}
+              <h3 className="paso-titulo">{paso.titulo}</h3>
+              <p className="paso-texto">{paso.texto}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
