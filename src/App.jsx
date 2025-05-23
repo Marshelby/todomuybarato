@@ -4,6 +4,7 @@ import WaveSeparator from './components/WaveSeparator';
 import Ofertas from './components/Ofertas';
 import WaveSeparatorInvertido from './components/WaveSeparatorInvertido';
 import ComoComprar from './components/ComoComprar';
+import QuienesSomos from './components/QuienesSomos';
 import Testimonios from './components/Testimonios';
 import Footer from './components/Footer';
 
@@ -26,6 +27,10 @@ function App() {
 
       <div id="comprar">
         <ComoComprar />
+      </div>
+
+      <div id="quienes">
+        <QuienesSomos />
       </div>
 
       <div id="opiniones">
