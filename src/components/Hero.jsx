@@ -1,6 +1,6 @@
 import "./Hero.css";
 import { FaWhatsapp } from "react-icons/fa";
-import ilustracion from "../assets/hero-ilustracion.png"; // Puedes cambiarla
+import ilustracion from "../assets/hero-ilustracion.png";
 
 function Hero() {
   return (
@@ -20,9 +20,12 @@ function Hero() {
             <FaWhatsapp className="hero-icon" />
             Escríbenos por WhatsApp
           </a>
+          <p className="hero-slogan">
+            Confianza, rapidez y precios bajos todos los días 🛒
+          </p>
         </div>
         <div className="hero-image">
-          <img src={ilustracion} alt="Productos económicos" />
+          <img src={ilustracion} alt="Productos económicos" className="hero-float" />
         </div>
       </div>
     </section>
