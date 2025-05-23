@@ -8,14 +8,28 @@
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0.5rem;
   font-family: 'Poppins', sans-serif;
+  color: #111827;
+}
+
+.ofertas-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+}
+
+.inline-icon {
+  margin-left: 0.5rem;
+  color: #fbbf24; /* Amarillo */
 }
 
 .ofertas-grid {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -23,11 +37,14 @@
 .oferta-card {
   background: white;
   border-radius: 1rem;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
   padding: 1.5rem;
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
 }
 
 .oferta-card:hover {
@@ -44,34 +61,50 @@
 }
 
 .oferta-nombre {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+  color: #111827;
 }
 
 .oferta-precio {
-  color: #16a34a;
-  font-weight: 700;
-  font-size: 1.1rem;
+  background: #ecfdf5;
+  color: #10b981;
+  padding: 0.3rem 0.8rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  display: inline-block;
 }
 
 .oferta-stock {
   font-size: 0.875rem;
   color: #6b7280;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .oferta-boton {
   background-color: #facc15;
   color: #1f2937;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 9999px;
   text-align: center;
   transition: all 0.3s ease;
   text-decoration: none;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 10px rgba(250, 204, 21, 0.3);
 }
 
 .oferta-boton:hover {
   background-color: #eab308;
+  transform: scale(1.04);
+}
+
+.boton-icon {
+  font-size: 1rem;
 }
