@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import WaveSeparator from './components/WaveSeparator';
 import Ofertas from './components/Ofertas';
 import ComoComprar from './components/ComoComprar';
 import Testimonios from './components/Testimonios';
@@ -13,15 +14,21 @@ function App() {
       <div id="inicio" className="pt-20">
         <Hero />
       </div>
+
+      <WaveSeparator />
+
       <div id="ofertas">
         <Ofertas />
       </div>
+
       <div id="comprar">
         <ComoComprar />
       </div>
+
       <div id="opiniones">
         <Testimonios />
       </div>
+
       <Footer />
     </div>
   );
