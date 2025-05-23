@@ -21,18 +21,29 @@
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  position: relative;
 }
 
 .paso-card {
   background-color: #f9fafb;
   border-radius: 1rem;
-  padding: 2rem 1rem;
+  padding: 2.5rem 1rem 2rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
+  position: relative;
 }
 
 .paso-card:hover {
   transform: translateY(-5px);
+}
+
+.paso-numero {
+  position: absolute;
+  top: -1.3rem;
+  left: 1rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #d1d5db;
 }
 
 .paso-icono {
@@ -52,4 +63,20 @@
   font-size: 0.95rem;
   color: #6b7280;
   line-height: 1.6;
+}
+
+.btn-contactar {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: #10b981;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-contactar:hover {
+  background-color: #059669;
 }

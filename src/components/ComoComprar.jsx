@@ -32,12 +32,21 @@ function ComoComprar() {
         <div className="comprar-grid">
           {pasos.map((paso, index) => (
             <div className="paso-card" key={index}>
+              <span className="paso-numero">{index + 1}</span>
               {paso.icono}
               <h3 className="paso-titulo">{paso.titulo}</h3>
               <p className="paso-texto">{paso.texto}</p>
             </div>
           ))}
         </div>
+        <a
+          href="https://wa.me/56912345678"
+          className="btn-contactar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Quiero comprar ahora
+        </a>
       </div>
     </section>
   );
