@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import WaveSeparator from './components/WaveSeparator';
 import Ofertas from './components/Ofertas';
+import WaveSeparatorInvertido from './components/WaveSeparatorInvertido';
 import ComoComprar from './components/ComoComprar';
 import Testimonios from './components/Testimonios';
 import Footer from './components/Footer';
@@ -20,6 +21,8 @@ function App() {
       <div id="ofertas">
         <Ofertas />
       </div>
+
+      <WaveSeparatorInvertido />
 
       <div id="comprar">
         <ComoComprar />

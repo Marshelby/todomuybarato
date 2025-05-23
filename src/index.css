@@ -13,3 +13,9 @@ body {
   overflow: hidden;
   line-height: 0;
 }
+
+.wave-separator-invertido {
+  margin-bottom: -2rem;
+  overflow: hidden;
+  line-height: 0;
+}

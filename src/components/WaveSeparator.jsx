@@ -9,3 +9,4 @@ function WaveSeparator() {
 }
 
 export default WaveSeparator;
+
