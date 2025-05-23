@@ -68,7 +68,7 @@
 .btn-contactar {
   display: inline-block;
   margin-top: 2rem;
-  background-color: #10b981;
+  background-color: #f97316; /* naranja */
   color: white;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
@@ -78,5 +78,5 @@
 }
 
 .btn-contactar:hover {
-  background-color: #059669;
+  background-color: #ea580c;
 }
