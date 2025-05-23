@@ -47,13 +47,15 @@ function Ofertas() {
       <div className="ofertas-grid">
         {productos.map((producto, index) => (
           <div key={index} className="oferta-card">
-            <img
-              src={producto.imagen}
-              alt={producto.nombre}
-              className="oferta-img"
-            />
+            <div className="oferta-img-container">
+              <img
+                src={producto.imagen}
+                alt={producto.nombre}
+                className="oferta-img"
+              />
+              <span className="oferta-precio-badge">{producto.precio}</span>
+            </div>
             <h3 className="oferta-nombre">{producto.nombre}</h3>
-            <span className="oferta-precio">{producto.precio}</span>
             <p className="oferta-stock">Stock: {producto.stock}</p>
             <a
               href="https://wa.me/56912345678"

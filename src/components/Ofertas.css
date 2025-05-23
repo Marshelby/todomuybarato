@@ -23,7 +23,7 @@
 
 .inline-icon {
   margin-left: 0.5rem;
-  color: #fbbf24; /* Amarillo */
+  color: #fbbf24;
 }
 
 .ofertas-grid {
@@ -52,12 +52,33 @@
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
+.oferta-img-container {
+  position: relative;
+  width: 100%;
+}
+
 .oferta-img {
   width: 100%;
   height: 160px;
   object-fit: cover;
   border-radius: 0.5rem;
-  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.oferta-img-container:hover .oferta-img {
+  transform: scale(1.05);
+}
+
+.oferta-precio-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #10b981;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 9999px;
 }
 
 .oferta-nombre {
@@ -65,17 +86,10 @@
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: #111827;
-}
-
-.oferta-precio {
-  background: #ecfdf5;
-  color: #10b981;
-  padding: 0.3rem 0.8rem;
-  border-radius: 9999px;
-  font-weight: 600;
-  font-size: 1rem;
-  margin-bottom: 0.25rem;
-  display: inline-block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .oferta-stock {
@@ -102,7 +116,8 @@
 
 .oferta-boton:hover {
   background-color: #eab308;
-  transform: scale(1.04);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(250, 204, 21, 0.4);
 }
 
 .boton-icon {
