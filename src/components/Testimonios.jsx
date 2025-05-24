@@ -1,30 +1,26 @@
 import "./Testimonios.css";
 import { useEffect, useState } from "react";
-import avatar1 from "../assets/avatar1.jpg";
-import avatar2 from "../assets/avatar2.jpg";
-import avatar3 from "../assets/avatar3.jpg";
-import avatar4 from "../assets/avatar4.jpg";
 
 const testimonios = [
   {
     nombre: "Carlos, Quilpué",
     texto: "Compré 3 cosas y todo llegó en perfectas condiciones. Muy barato y confiable.",
-    foto: avatar1,
+    foto: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
     nombre: "Ana, Villa Alemana",
     texto: "Me encantó, productos útiles y baratos. Recomendado al 100%.",
-    foto: avatar2,
+    foto: "https://randomuser.me/api/portraits/women/44.jpg",
   },
   {
     nombre: "Marcela, Viña del Mar",
     texto: "El envío fue súper rápido y la atención excelente. Ya soy clienta fija.",
-    foto: avatar3,
+    foto: "https://randomuser.me/api/portraits/women/68.jpg",
   },
   {
     nombre: "Eduardo, Limache",
     texto: "Todo barato, buena calidad, y te responden al tiro. Lo recomiendo.",
-    foto: avatar4,
+    foto: "https://randomuser.me/api/portraits/men/45.jpg",
   },
 ];
 
