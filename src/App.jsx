@@ -8,6 +8,7 @@ import PorqueElegirnos from './components/PorqueElegirnos';
 import ComoComprar from './components/ComoComprar';
 import QuienesSomos from './components/QuienesSomos';
 import Testimonios from './components/Testimonios';
+import ContactoFinal from './components/ContactoFinal';
 import Footer from './components/Footer';
 
 function App() {
@@ -48,6 +49,8 @@ function App() {
       <div id="opiniones">
         <Testimonios />
       </div>
+
+      <ContactoFinal />
 
       <Footer />
     </div>
