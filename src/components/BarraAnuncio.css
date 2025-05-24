@@ -1,5 +1,5 @@
 .barra-anuncio {
-  background-color: #facc15; /* amarillo fuerte */
+  background-color: #facc15;
   color: #1f2937;
   font-weight: 600;
   font-size: 0.95rem;
@@ -7,22 +7,27 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.6rem 1.5rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  position: relative;
+  z-index: 50;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .anuncio-contenido {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+  text-align: left;
 }
 
-.anuncio-icono {
-  font-size: 1.1rem;
+.mensaje-fijo {
+  font-size: 1rem;
+  color: #b45309;
+}
+
+.mensaje-rotativo {
+  font-size: 0.95rem;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .anuncio-cerrar {
@@ -32,8 +37,20 @@
   cursor: pointer;
   font-size: 1.1rem;
   transition: transform 0.2s ease;
+  margin-left: 1rem;
 }
 
 .anuncio-cerrar:hover {
   transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
