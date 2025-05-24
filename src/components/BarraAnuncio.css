@@ -6,17 +6,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6rem 1.5rem;
+  padding: 0.4rem 1.2rem;
+  margin-top: 0;         /* 💡 No separación arriba */
+  border-top: 1px solid #fde047;
   position: relative;
-  z-index: 50;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  z-index: 10;           /* Menor que Navbar si este es sticky */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
 .anuncio-contenido {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.3rem;
+  gap: 0.2rem;
   text-align: left;
 }
 
@@ -27,7 +29,7 @@
 
 .mensaje-rotativo {
   font-size: 0.95rem;
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.4s ease-in-out;
 }
 
 .anuncio-cerrar {
@@ -47,7 +49,7 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-5px);
+    transform: translateY(-3px);
   }
   to {
     opacity: 1;
