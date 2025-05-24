@@ -20,8 +20,8 @@ function App() {
       <Navbar />
       <BarraAnuncio />
 
-      {/* Espaciado preciso para evitar solapamiento con navbar + barra */}
-      <div id="inicio" className="pt-[6.5rem]">
+      {/* Espacio exacto para navbar (64px) + barra (44px) = 108px */}
+      <div id="inicio" className="pt-[6.75rem]">
         <Hero />
       </div>
 
