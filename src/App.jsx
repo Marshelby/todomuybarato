@@ -6,11 +6,12 @@ import WaveSeparatorInvertido from './components/WaveSeparatorInvertido';
 import Categorias from './components/Categorias';
 import PorqueElegirnos from './components/PorqueElegirnos';
 import ComoComprar from './components/ComoComprar';
+import Ubicacion from './components/Ubicacion';
 import QuienesSomos from './components/QuienesSomos';
 import Testimonios from './components/Testimonios';
 import ContactoFinal from './components/ContactoFinal';
 import Footer from './components/Footer';
-import BotonOfertas from './components/BotonOfertas'; // 🔥 Nuevo botón flotante
+import BotonOfertas from './components/BotonOfertas';
 
 function App() {
   return (
@@ -43,6 +44,10 @@ function App() {
         <ComoComprar />
       </div>
 
+      <div id="ubicacion">
+        <Ubicacion />
+      </div>
+
       <div id="quienes">
         <QuienesSomos />
       </div>
@@ -52,7 +57,7 @@ function App() {
       </div>
 
       <ContactoFinal />
-      <BotonOfertas /> {/* ✅ Aquí se activa el botón scroll */}
+      <BotonOfertas />
       <Footer />
     </div>
   );
