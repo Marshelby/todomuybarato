@@ -15,6 +15,21 @@
   z-index: 90;
 }
 
+.slide-in-left {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .anuncio-contenido {
   display: flex;
   flex-direction: column;
