@@ -17,7 +17,7 @@ function BarraAnuncio() {
   useEffect(() => {
     const delay = setTimeout(() => {
       setMostrar(true);
-    }, 4000); // Espera 4 segundos para mostrar
+    }, 4000); // espera 4 segundos
 
     return () => clearTimeout(delay);
   }, []);
@@ -25,7 +25,7 @@ function BarraAnuncio() {
   useEffect(() => {
     const intervalo = setInterval(() => {
       setIndex((prev) => (prev + 1) % mensajes.length);
-    }, 6000); // Sigue rotando cada 6 segundos
+    }, 3000); // cambia cada 3 segundos ahora
 
     return () => clearInterval(intervalo);
   }, []);
