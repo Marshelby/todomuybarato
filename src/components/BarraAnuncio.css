@@ -1,18 +1,18 @@
 .barra-anuncio {
   background-color: #facc15;
   color: #1f2937;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 0.95rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1.2rem;
+  padding: 0.6rem 1.2rem;
   position: fixed;
-  top: 64px; /* ✅ Altura real del navbar */
+  top: 64px;
   left: 0;
   width: 100%;
   z-index: 90;
-  /* ❌ Quitamos sombra y borde que causaban espacio visual falso */
 }
 
 .anuncio-contenido {
@@ -25,12 +25,15 @@
 
 .mensaje-fijo {
   font-size: 1rem;
+  font-weight: 700;
   color: #b45309;
 }
 
 .mensaje-rotativo {
   font-size: 0.95rem;
+  font-weight: 500;
   animation: fadeIn 0.4s ease-in-out;
+  line-height: 1.4;
 }
 
 .anuncio-cerrar {

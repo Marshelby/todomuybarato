@@ -15,8 +15,7 @@ function BarraAnuncio() {
   useEffect(() => {
     const intervalo = setInterval(() => {
       setIndex((prev) => (prev + 1) % mensajes.length);
-    }, 6000); // cambia cada 6 segundos
-
+    }, 3000); // cambia cada 3 segundos
     return () => clearInterval(intervalo);
   }, []);
 
