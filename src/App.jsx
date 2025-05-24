@@ -4,6 +4,7 @@ import WaveSeparator from './components/WaveSeparator';
 import Ofertas from './components/Ofertas';
 import WaveSeparatorInvertido from './components/WaveSeparatorInvertido';
 import Categorias from './components/Categorias';
+import PorqueElegirnos from './components/PorqueElegirnos';
 import ComoComprar from './components/ComoComprar';
 import QuienesSomos from './components/QuienesSomos';
 import Testimonios from './components/Testimonios';
@@ -28,6 +29,10 @@ function App() {
 
       <div id="categorias">
         <Categorias />
+      </div>
+
+      <div id="beneficios">
+        <PorqueElegirnos />
       </div>
 
       <WaveSeparator />
