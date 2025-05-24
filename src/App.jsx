@@ -20,8 +20,8 @@ function App() {
       <Navbar />
       <BarraAnuncio />
 
-      {/* Hero SIN pt-20 – causa empalme visual */}
-      <div id="inicio">
+      {/* Aumentamos el espacio para que se vea bien la barra */}
+      <div id="inicio" className="pt-24">
         <Hero />
       </div>
 

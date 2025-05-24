@@ -46,9 +46,16 @@
   transform: translateX(-50%);
   font-size: 1.3rem;
   font-weight: 700;
-  color: #1f2937;
   font-family: 'Poppins', sans-serif;
   white-space: nowrap;
+}
+
+.navbar-logo span {
+  background-color: #fef08a;
+  padding: 0.35rem 0.8rem;
+  border-radius: 9999px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  color: #1f2937;
 }
 
 .izquierda {
