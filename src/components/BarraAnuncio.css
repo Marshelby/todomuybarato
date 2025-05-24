@@ -8,7 +8,7 @@
   align-items: center;
   padding: 0.5rem 1.2rem;
   position: fixed;
-  top: 64px; /* ✅ EXACTAMENTE debajo del Navbar */
+  top: 62px; /* 🔧 Ajustado para eliminar espacio sobrante */
   left: 0;
   width: 100%;
   z-index: 90;
