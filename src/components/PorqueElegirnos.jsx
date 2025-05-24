@@ -1,17 +1,32 @@
 import "./PorqueElegirnos.css";
-import { FaShieldAlt, FaTruck, FaComments, FaDollarSign, FaUndo } from "react-icons/fa";
+import { FaShieldAlt, FaTruck, FaComments, FaDollarSign, FaSmile } from "react-icons/fa";
 
 const beneficios = [
   {
-    icono: <FaShieldAlt />, titulo: "Compra Segura", descripcion: "Tus datos y pagos están protegidos." },
+    icono: <FaShieldAlt />,
+    titulo: "Compra Segura",
+    descripcion: "Tus datos y pagos están protegidos."
+  },
   {
-    icono: <FaTruck />, titulo: "Envío Rápido", descripcion: "Entregas en 24-48 hrs en la V Región." },
+    icono: <FaTruck />,
+    titulo: "Envío Rápido",
+    descripcion: "Entregas en 24-48 hrs en la V Región."
+  },
   {
-    icono: <FaComments />, titulo: "Atención Directa", descripcion: "Te respondemos por WhatsApp al instante." },
+    icono: <FaComments />,
+    titulo: "Atención Directa",
+    descripcion: "Te respondemos por WhatsApp al instante."
+  },
   {
-    icono: <FaDollarSign />, titulo: "Precios Muy Bajos", descripcion: "Somos importadores directos, sin intermediarios." },
+    icono: <FaDollarSign />,
+    titulo: "Precios Muy Bajos",
+    descripcion: "Somos importadores directos, sin intermediarios."
+  },
   {
-    icono: <FaUndo />, titulo: "Garantía de Cambio", descripcion: "Si no te gusta, puedes cambiarlo fácilmente." }
+    icono: <FaSmile />,
+    titulo: "Clientes Satisfechos",
+    descripcion: "Más de 500 personas felices con sus compras."
+  }
 ];
 
 function PorqueElegirnos() {
