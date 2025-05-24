@@ -36,6 +36,13 @@
   font-weight: 400;
 }
 
+.frase-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
 .frase-rotativa {
   font-size: 1.1rem;
   color: #1e3a8a;
@@ -143,9 +150,8 @@
     text-align: left;
   }
 
-  .frase-rotativa {
-    text-align: left;
-    align-self: flex-start;
+  .frase-wrapper {
+    justify-content: flex-start;
   }
 
   .hero-title {

@@ -19,8 +19,8 @@ function Hero() {
       setTimeout(() => {
         setFraseActual((prev) => (prev + 1) % frases.length);
         setFade(true);
-      }, 400); // tiempo de fadeOut antes de cambiar
-    }, 8000);
+      }, 400); // fade out
+    }, 4000); // cambio cada 4 segundos
     return () => clearInterval(intervalo);
   }, []);
 
@@ -35,8 +35,10 @@ function Hero() {
               <strong>Stock limitado</strong> y{" "}
               <strong>entrega rápida</strong> en la Quinta Región.
             </p>
-            <div className={`frase-rotativa ${fade ? "fade-in" : "fade-out"}`}>
-              {frases[fraseActual]}
+            <div className="frase-wrapper">
+              <div className={`frase-rotativa ${fade ? "fade-in" : "fade-out"}`}>
+                {frases[fraseActual]}
+              </div>
             </div>
             <a
               href="https://wa.me/56912345678"
