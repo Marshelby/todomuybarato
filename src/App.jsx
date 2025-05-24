@@ -20,8 +20,8 @@ function App() {
       <Navbar />
       <BarraAnuncio />
 
-      {/* 👇 Hero con pt-20 restaurado para separación ideal */}
-      <div id="inicio" className="pt-20">
+      {/* Hero SIN pt-20 – causa empalme visual */}
+      <div id="inicio">
         <Hero />
       </div>
 
