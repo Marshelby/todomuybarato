@@ -20,8 +20,8 @@ function App() {
       <Navbar />
       <BarraAnuncio />
 
-      {/* 🔧 Eliminado pt-20 para que Hero quede pegado a la barra */}
-      <div id="inicio">
+      {/* 👇 Hero con pt-20 restaurado para separación ideal */}
+      <div id="inicio" className="pt-20">
         <Hero />
       </div>
 
