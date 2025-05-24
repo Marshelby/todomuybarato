@@ -11,11 +11,16 @@ function Hero() {
     "+500 clientes felices 🧡",
   ];
   const [fraseActual, setFraseActual] = useState(0);
+  const [fade, setFade] = useState(true);
 
   useEffect(() => {
     const intervalo = setInterval(() => {
-      setFraseActual((prev) => (prev + 1) % frases.length);
-    }, 3500);
+      setFade(false);
+      setTimeout(() => {
+        setFraseActual((prev) => (prev + 1) % frases.length);
+        setFade(true);
+      }, 400); // tiempo de fadeOut antes de cambiar
+    }, 8000);
     return () => clearInterval(intervalo);
   }, []);
 
@@ -30,7 +35,7 @@ function Hero() {
               <strong>Stock limitado</strong> y{" "}
               <strong>entrega rápida</strong> en la Quinta Región.
             </p>
-            <div className="frase-rotativa">
+            <div className={`frase-rotativa ${fade ? "fade-in" : "fade-out"}`}>
               {frases[fraseActual]}
             </div>
             <a
