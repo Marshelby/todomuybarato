@@ -6,12 +6,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.4rem 1.2rem;
-  margin-top: 0;         /* 💡 No separación arriba */
-  border-top: 1px solid #fde047;
+  padding: 0.5rem 1.2rem;
+  margin: 0;
   position: relative;
-  z-index: 10;           /* Menor que Navbar si este es sticky */
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  z-index: 1;
+  border-bottom: 1px solid #fbbf24;
+  box-shadow: inset 0 1px 0 #fbbf24;
 }
 
 .anuncio-contenido {
