@@ -16,7 +16,7 @@ function ComoComprar() {
     {
       icono: <FaTruck className="paso-icono" />,
       titulo: "Coordinamos el envío",
-      texto: "Delivery gratis desde $10.000 o retiro en persona."
+      texto: "Delivery gratis desde $100.000 o retiro en persona."
     },
     {
       icono: <FaCheckCircle className="paso-icono" />,
