@@ -10,6 +10,7 @@ import QuienesSomos from './components/QuienesSomos';
 import Testimonios from './components/Testimonios';
 import ContactoFinal from './components/ContactoFinal';
 import Footer from './components/Footer';
+import BotonOfertas from './components/BotonOfertas'; // 🔥 Nuevo botón flotante
 
 function App() {
   return (
@@ -51,7 +52,7 @@ function App() {
       </div>
 
       <ContactoFinal />
-
+      <BotonOfertas /> {/* ✅ Aquí se activa el botón scroll */}
       <Footer />
     </div>
   );

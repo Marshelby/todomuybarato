@@ -1,0 +1,28 @@
+.boton-ofertas {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  background-color: #f97316;
+  color: white;
+  font-weight: 600;
+  padding: 0.8rem 1.4rem;
+  border-radius: 9999px;
+  border: none;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 6px 18px rgba(249, 115, 22, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.boton-ofertas:hover {
+  background-color: #ea580c;
+  transform: scale(1.05);
+}
+
+.icono-ofertas {
+  font-size: 1.2rem;
+}
