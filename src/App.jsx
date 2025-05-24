@@ -1,5 +1,5 @@
-import BarraAnuncio from './components/BarraAnuncio';
 import Navbar from './components/Navbar';
+import BarraAnuncio from './components/BarraAnuncio';
 import Hero from './components/Hero';
 import WaveSeparator from './components/WaveSeparator';
 import Ofertas from './components/Ofertas';
@@ -17,8 +17,8 @@ import BotonOfertas from './components/BotonOfertas';
 function App() {
   return (
     <div className="font-sans scroll-smooth">
-      <BarraAnuncio /> {/* 📢 Anuncio superior */}
       <Navbar />
+      <BarraAnuncio /> {/* ✅ Ahora justo debajo del Navbar */}
 
       <div id="inicio" className="pt-20">
         <Hero />
