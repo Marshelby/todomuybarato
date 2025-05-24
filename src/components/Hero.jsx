@@ -9,6 +9,8 @@ function Hero() {
     "Entrega rápida garantizada 🚚",
     "Productos útiles para tu hogar 🏡",
     "+500 clientes felices 🧡",
+    "Compra segura y rápida 🛒",
+    "Atención directa por WhatsApp 📱",
   ];
   const [fraseActual, setFraseActual] = useState(0);
   const [fade, setFade] = useState(true);
