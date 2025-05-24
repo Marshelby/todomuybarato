@@ -1,22 +1,29 @@
 import "./Navbar.css";
 
 function Navbar() {
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-content">
         <div className="navbar-links">
-          <a href="#inicio">Inicio</a>
-          <a href="#ofertas">Ofertas</a>
-          <a href="#comprar">Comprar</a>
-          <a href="#opiniones">Opiniones</a>
+          <button onClick={() => handleScroll("inicio")}>Inicio</button>
+          <button onClick={() => handleScroll("ofertas")}>Ofertas</button>
+          <button onClick={() => handleScroll("categorias")}>Categorías</button>
+          <button onClick={() => handleScroll("beneficios")}>Beneficios</button>
+          <button onClick={() => handleScroll("comprar")}>Comprar</button>
+          <button onClick={() => handleScroll("ubicacion")}>Ubicación</button>
+          <button onClick={() => handleScroll("quienes")}>Nosotros</button>
+          <button onClick={() => handleScroll("opiniones")}>Opiniones</button>
         </div>
 
         <div className="navbar-logo">
           <span>Todomuybarato</span>
-        </div>
-
-        <div className="navbar-cta">
-          <a href="#ofertas" className="cta-button">Ver Ofertas</a>
         </div>
       </div>
     </nav>
