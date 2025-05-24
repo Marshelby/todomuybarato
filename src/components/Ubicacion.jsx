@@ -35,8 +35,8 @@ function Ubicacion() {
 
           <div className="ubicacion-mapa">
             <iframe
-              title="Ubicación Arte Elegante"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.123456789!2d-71.2345678!3d-33.0456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x123456789abcdef!2sArte%20Elegante%20Barber%C3%ADa!5e0!3m2!1ses-419!2scl!4v1620000000000!5m2!1ses-419!2scl"
+              title="Ubicación Todomuybarato"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.1450153578996!2d-71.44615338504254!3d-33.04349608088619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de5ed89a19ed%3A0x168ddeabcaacf2b2!2sAv.%20Las%20Palmas%202108%2C%20Los%20Pinos%2C%20Quilpu%C3%A9%2C%20Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1716522660001!5m2!1ses-419!2scl"
               width="100%"
               height="250"
               style={{ border: 0 }}
