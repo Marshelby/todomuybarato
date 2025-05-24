@@ -37,7 +37,7 @@
 }
 
 .navbar-links button:hover {
-  color: #facc15; /* amarillo cálido */
+  color: #facc15;
 }
 
 .navbar-logo {
@@ -51,10 +51,17 @@
   white-space: nowrap;
 }
 
+.izquierda {
+  justify-content: flex-start;
+}
+
+.derecha {
+  justify-content: flex-end;
+}
+
 @media (max-width: 768px) {
   .navbar-content {
     flex-direction: column;
-    align-items: center;
     gap: 0.5rem;
   }
 

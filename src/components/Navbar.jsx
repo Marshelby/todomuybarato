@@ -11,19 +11,22 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-content">
-        <div className="navbar-links">
+        <div className="navbar-links izquierda">
           <button onClick={() => handleScroll("inicio")}>Inicio</button>
           <button onClick={() => handleScroll("ofertas")}>Ofertas</button>
           <button onClick={() => handleScroll("categorias")}>Categorías</button>
           <button onClick={() => handleScroll("beneficios")}>Beneficios</button>
-          <button onClick={() => handleScroll("comprar")}>Comprar</button>
-          <button onClick={() => handleScroll("ubicacion")}>Ubicación</button>
-          <button onClick={() => handleScroll("quienes")}>Nosotros</button>
-          <button onClick={() => handleScroll("opiniones")}>Opiniones</button>
         </div>
 
         <div className="navbar-logo">
           <span>Todomuybarato</span>
+        </div>
+
+        <div className="navbar-links derecha">
+          <button onClick={() => handleScroll("comprar")}>Comprar</button>
+          <button onClick={() => handleScroll("ubicacion")}>Ubicación</button>
+          <button onClick={() => handleScroll("quienes")}>Nosotros</button>
+          <button onClick={() => handleScroll("opiniones")}>Opiniones</button>
         </div>
       </div>
     </nav>
