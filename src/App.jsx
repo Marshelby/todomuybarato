@@ -18,9 +18,10 @@ function App() {
   return (
     <div className="font-sans scroll-smooth">
       <Navbar />
-      <BarraAnuncio /> {/* ✅ Ahora justo debajo del Navbar */}
+      <BarraAnuncio />
 
-      <div id="inicio" className="pt-20">
+      {/* 🔧 Eliminado pt-20 para que Hero quede pegado a la barra */}
+      <div id="inicio">
         <Hero />
       </div>
 
