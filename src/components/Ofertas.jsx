@@ -41,7 +41,7 @@ function Ofertas() {
         <FaShoppingCart className="inline-icon" /> Ofertas del Mes
       </h2>
       <p className="ofertas-subtitle">
-        Aprovecha estas promociones exclusivas por tiempo limitado 🔥
+        Stock limitado. Se actualizan cada semana. ¡Aprovecha antes de que se agoten! 🔥
       </p>
 
       <div className="ofertas-grid">
@@ -56,14 +56,14 @@ function Ofertas() {
               <span className="oferta-precio-badge">{producto.precio}</span>
             </div>
             <h3 className="oferta-nombre">{producto.nombre}</h3>
-            <p className="oferta-stock">Stock: {producto.stock}</p>
+            <p className="oferta-stock">Stock disponible: {producto.stock}</p>
             <a
               href="https://wa.me/56912345678"
               className="oferta-boton"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaShoppingCart className="boton-icon" /> Comprar
+              <FaShoppingCart className="boton-icon" /> Lo quiero
             </a>
           </div>
         ))}
