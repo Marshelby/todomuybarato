@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import WaveSeparator from './components/WaveSeparator';
 import Ofertas from './components/Ofertas';
 import WaveSeparatorInvertido from './components/WaveSeparatorInvertido';
+import Categorias from './components/Categorias';
 import ComoComprar from './components/ComoComprar';
 import QuienesSomos from './components/QuienesSomos';
 import Testimonios from './components/Testimonios';
@@ -24,6 +25,12 @@ function App() {
       </div>
 
       <WaveSeparatorInvertido />
+
+      <div id="categorias">
+        <Categorias />
+      </div>
+
+      <WaveSeparator />
 
       <div id="comprar">
         <ComoComprar />

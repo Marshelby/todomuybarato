@@ -1,0 +1,65 @@
+.categorias-section {
+  background: #f9fafb;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.categorias-titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.categorias-subtitulo {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+}
+
+.categorias-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.categoria-card {
+  background: white;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, border 0.3s ease;
+  cursor: pointer;
+}
+
+.categoria-card:hover {
+  transform: translateY(-6px);
+}
+
+.categoria-icono {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.categoria-nombre {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.categoria-card.activa {
+  border-width: 3px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.categoria-filtrada {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #1f2937;
+  font-weight: 500;
+}
