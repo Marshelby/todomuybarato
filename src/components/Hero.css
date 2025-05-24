@@ -32,15 +32,35 @@
   font-size: 1.2rem;
   color: #374151;
   max-width: 600px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 400;
 }
 
+.frase-rotativa {
+  font-size: 1.1rem;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
 .hero-slogan {
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
   font-size: 0.95rem;
   color: #6b7280;
   font-style: italic;
+}
+
+.hero-sello {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #065f46;
+  background: #d1fae5;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
 }
 
 .hero-button {
@@ -84,6 +104,26 @@
   50% {
     transform: translateY(-8px);
   }
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: #16a34a;
+  padding: 0.9rem;
+  border-radius: 50%;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+.whatsapp-icon {
+  color: white;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 768px) {
