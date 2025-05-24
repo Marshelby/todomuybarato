@@ -9,7 +9,7 @@ function Hero() {
         <div className="hero-text">
           <h1 className="hero-title">¡TODO MUY BARATO!</h1>
           <p className="hero-subtitle">
-            Productos útiles a precios bajos todo el año. Stock limitado y entrega rápida en la Quinta Región.
+            Encuentra lo que necesitas a precios bajos todo el año. <strong>Stock limitado</strong> y <strong>entrega rápida</strong> en la Quinta Región.
           </p>
           <a
             href="https://wa.me/56912345678"
@@ -18,14 +18,14 @@ function Hero() {
             className="hero-button"
           >
             <FaWhatsapp className="hero-icon" />
-            Escríbenos por WhatsApp
+            Habla con nosotros por WhatsApp
           </a>
           <p className="hero-slogan">
-            Confianza, rapidez y precios bajos todos los días 🛒
+            🎯 Confianza, rapidez y precios bajos todos los días
           </p>
         </div>
         <div className="hero-image">
-          <img src={ilustracion} alt="Productos económicos" className="hero-float" />
+          <img src={ilustracion} alt="Productos baratos y útiles" className="hero-float" />
         </div>
       </div>
     </section>
