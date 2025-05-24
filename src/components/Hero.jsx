@@ -22,7 +22,7 @@ function Hero() {
         setFraseActual((prev) => (prev + 1) % frases.length);
         setFade(true);
       }, 400); // fade out
-    }, 4000); // cambio cada 4 segundos
+    }, 3000); // cambio cada 3 segundos
     return () => clearInterval(intervalo);
   }, []);
 
