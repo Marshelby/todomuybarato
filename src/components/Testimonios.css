@@ -1,0 +1,64 @@
+.testimonios-section {
+  background: #f0fdf4;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.testimonios-titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  color: #111827;
+  margin-bottom: 2rem;
+}
+
+.testimonios-slider {
+  position: relative;
+  display: grid;
+  place-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+  height: 260px;
+}
+
+.testimonio-card {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 500px;
+  opacity: 0;
+  transform: scale(0.98);
+  transition: all 0.5s ease;
+  position: absolute;
+  z-index: 0;
+}
+
+.testimonio-card.activo {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 10;
+}
+
+.testimonio-foto {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.testimonio-texto {
+  font-size: 0.95rem;
+  color: #374151;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.testimonio-nombre {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #111827;
+}
