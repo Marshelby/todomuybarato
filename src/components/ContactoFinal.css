@@ -1,0 +1,49 @@
+.contacto-section {
+  background: #ecfdf5; /* verde suave */
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.contacto-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contacto-titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.contacto-subtitulo {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+}
+
+.contacto-boton {
+  background-color: #16a34a;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.9rem 1.6rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 6px 18px rgba(22, 163, 74, 0.3);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.contacto-boton:hover {
+  background-color: #15803d;
+  transform: scale(1.05);
+}
+
+.contacto-icono {
+  font-size: 1.3rem;
+}
