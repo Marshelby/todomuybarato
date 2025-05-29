@@ -1,36 +1,31 @@
 import "./Ofertas.css";
 import { FaShoppingCart } from "react-icons/fa";
 
+// Nuevos productos con imágenes locales
 const productos = [
   {
-    nombre: "Pack de Linternas",
-    precio: "$3.990",
-    imagen: "https://via.placeholder.com/250x160?text=Linternas",
-    stock: "15",
+    nombre: "Parche Adelgazante",
+    precio: "$1.000",
+    imagen: require("../assets/parche.png"),
+    stock: "40",
   },
   {
-    nombre: "Jabón Líquido 5L",
-    precio: "$2.490",
-    imagen: "https://via.placeholder.com/250x160?text=Jab%C3%B3n+5L",
+    nombre: "Alargador con Soquete",
+    precio: "$1.000",
+    imagen: require("../assets/alargador.png"),
     stock: "30",
   },
   {
-    nombre: "Set Herramientas Hogar",
-    precio: "$6.990",
-    imagen: "https://via.placeholder.com/250x160?text=Herramientas",
-    stock: "10",
-  },
-  {
-    nombre: "Pack 10 Mascarillas",
+    nombre: "Panel de Luz 6W",
     precio: "$1.000",
-    imagen: "https://via.placeholder.com/250x160?text=Mascarillas",
-    stock: "50",
+    imagen: require("../assets/panel.png"),
+    stock: "25",
   },
   {
-    nombre: "Mopa Giratoria",
-    precio: "$4.500",
-    imagen: "https://via.placeholder.com/250x160?text=Mopa",
-    stock: "12",
+    nombre: "Tostador Metálico",
+    precio: "$1.500",
+    imagen: require("../assets/tostador.png"),
+    stock: "20",
   },
 ];
 
