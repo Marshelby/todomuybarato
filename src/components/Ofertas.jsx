@@ -1,30 +1,29 @@
 import "./Ofertas.css";
 import { FaShoppingCart } from "react-icons/fa";
 
-// Nuevos productos con imágenes locales
 const productos = [
   {
     nombre: "Parche Adelgazante",
     precio: "$1.000",
-    imagen: require("../assets/parche.png"),
+    imagen: "/assets/parche.png",
     stock: "40",
   },
   {
     nombre: "Alargador con Soquete",
     precio: "$1.000",
-    imagen: require("../assets/alargador.png"),
+    imagen: "/assets/alargador.png",
     stock: "30",
   },
   {
     nombre: "Panel de Luz 6W",
     precio: "$1.000",
-    imagen: require("../assets/panel.png"),
+    imagen: "/assets/panel.png",
     stock: "25",
   },
   {
     nombre: "Tostador Metálico",
     precio: "$1.500",
-    imagen: require("../assets/tostador.png"),
+    imagen: "/assets/tostador.png",
     stock: "20",
   },
 ];
