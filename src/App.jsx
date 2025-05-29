@@ -20,8 +20,8 @@ function App() {
       <Navbar />
       <BarraAnuncio />
 
-      {/* Espacio exacto para navbar (64px) + barra (44px) = 108px */}
-      <div id="inicio" className="pt-[6.75rem]">
+      {/* Ajuste de compensación visual entre navbar y hero */}
+      <div id="inicio" className="pt-[5rem]">
         <Hero />
       </div>
 
