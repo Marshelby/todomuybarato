@@ -1,6 +1,6 @@
 import "./Hero.css";
 import { FaWhatsapp } from "react-icons/fa";
-import ilustracion from "../assets/hero-ilustracion.png";
+import ilustracion from "../assets/logo-hero.png";
 import { useEffect, useState } from "react";
 
 function Hero() {
@@ -58,8 +58,8 @@ function Hero() {
           </div>
           <div className="hero-image">
             <img
-              src={ilustracion}
-              alt="Productos baratos y útiles"
+              src={logoHero}
+              alt="Logo Todo Muy Barato"
               className="hero-float"
             />
           </div>
