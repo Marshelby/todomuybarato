@@ -20,8 +20,8 @@ function App() {
       <Navbar />
       <BarraAnuncio />
 
-      {/* Ajuste de compensación visual entre navbar y hero */}
-      <div id="inicio" className="pt-[5rem]">
+      {/* Ajuste corregido para eliminar por completo la franja blanca */}
+      <div id="inicio" className="pt-[4.25rem]">
         <Hero />
       </div>
 
