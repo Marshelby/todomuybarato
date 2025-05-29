@@ -1,6 +1,6 @@
 import "./Hero.css";
 import { FaWhatsapp } from "react-icons/fa";
-import ilustracion from "../assets/logo-hero.png";
+import logoHero from "../assets/logo-hero.png";
 import { useEffect, useState } from "react";
 
 function Hero() {
@@ -21,8 +21,8 @@ function Hero() {
       setTimeout(() => {
         setFraseActual((prev) => (prev + 1) % frases.length);
         setFade(true);
-      }, 400); // fade out
-    }, 3000); // cambio cada 3 segundos
+      }, 400);
+    }, 3000);
     return () => clearInterval(intervalo);
   }, []);
 
@@ -66,7 +66,6 @@ function Hero() {
         </div>
       </section>
 
-      {/* Botón flotante de WhatsApp */}
       <a
         href="https://wa.me/56912345678"
         target="_blank"
