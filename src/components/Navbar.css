@@ -84,3 +84,18 @@
     margin-top: 0.25rem;
   }
 }
+
+/* ░░ LINEA DIVISORA ENTRE SECCIONES DEL NAVBAR ░░ */
+.navbar-divider {
+  width: 1px;
+  height: 24px;
+  background-color: #d1d5db;
+  margin: 0 1rem;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navbar-divider {
+    display: block;
+  }
+}
