@@ -99,8 +99,17 @@
 
 .oferta-stock {
   font-size: 0.875rem;
-  color: #6b7280;
   margin-bottom: 1rem;
+}
+
+.stock-disponible {
+  color: #16a34a; /* verde */
+  font-weight: 600;
+}
+
+.stock-agotado {
+  color: #dc2626; /* rojo */
+  font-weight: 600;
 }
 
 .oferta-boton {

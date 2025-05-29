@@ -18,7 +18,7 @@ const productos = [
     nombre: "Panel de Luz 6W",
     precio: "$1.000 la unidad / $800 por mayor",
     imagen: "/assets/panel.png",
-    stock: "25",
+    stock: "0",
   },
   {
     nombre: "Tostador Metálico",
@@ -39,28 +39,37 @@ function Ofertas() {
       </p>
 
       <div className="ofertas-grid">
-        {productos.map((producto, index) => (
-          <div key={index} className="oferta-card">
-            <div className="oferta-img-container">
-              <img
-                src={producto.imagen}
-                alt={producto.nombre}
-                className="oferta-img"
-              />
-              <span className="oferta-precio-badge">{producto.precio}</span>
+        {productos.map((producto, index) => {
+          const stockDisponible = parseInt(producto.stock) > 0;
+          return (
+            <div key={index} className="oferta-card">
+              <div className="oferta-img-container">
+                <img
+                  src={producto.imagen}
+                  alt={producto.nombre}
+                  className="oferta-img"
+                />
+                <span className="oferta-precio-badge">{producto.precio}</span>
+              </div>
+              <h3 className="oferta-nombre">{producto.nombre}</h3>
+              <p
+                className={`oferta-stock ${
+                  stockDisponible ? "stock-disponible" : "stock-agotado"
+                }`}
+              >
+                Stock: {stockDisponible ? "Disponible" : "Agotado"}
+              </p>
+              <a
+                href="https://wa.me/56912345678"
+                className="oferta-boton"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaShoppingCart className="boton-icon" /> Lo quiero
+              </a>
             </div>
-            <h3 className="oferta-nombre">{producto.nombre}</h3>
-            <p className="oferta-stock">Stock disponible: {producto.stock}</p>
-            <a
-              href="https://wa.me/56912345678"
-              className="oferta-boton"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaShoppingCart className="boton-icon" /> Lo quiero
-            </a>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
