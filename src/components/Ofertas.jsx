@@ -4,25 +4,25 @@ import { FaShoppingCart } from "react-icons/fa";
 const productos = [
   {
     nombre: "Parche Adelgazante",
-    precio: "$1.000",
+    precio: "$1.000 la unidad / $500 por mayor",
     imagen: "/assets/parche.png",
     stock: "40",
   },
   {
     nombre: "Alargador con Soquete",
-    precio: "$1.000",
+    precio: "$1.000 la unidad / $800 por mayor",
     imagen: "/assets/alargador.png",
     stock: "30",
   },
   {
     nombre: "Panel de Luz 6W",
-    precio: "$1.000",
+    precio: "$1.000 la unidad / $800 por mayor",
     imagen: "/assets/panel.png",
     stock: "25",
   },
   {
     nombre: "Tostador Metálico",
-    precio: "$1.500",
+    precio: "$1.500 la unidad / $1.000 por mayor",
     imagen: "/assets/tostador.png",
     stock: "20",
   },
