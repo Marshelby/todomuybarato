@@ -5,25 +5,25 @@ const productos = [
   {
     nombre: "Parche Adelgazante",
     precio: "$1.000 la unidad / $500 por mayor",
-    imagen: "/assets/parche.png",
+    imagen: "/assets/parchefinal.png",
     stock: "40",
   },
   {
     nombre: "Alargador con Soquete",
     precio: "$1.000 la unidad / $800 por mayor",
-    imagen: "/assets/alargador.png",
+    imagen: "/assets/alargadorfinal.png",
     stock: "30",
   },
   {
     nombre: "Panel de Luz 6W",
     precio: "$1.000 la unidad / $800 por mayor",
-    imagen: "/assets/panel.png",
+    imagen: "/assets/panelfinal.png",
     stock: "0",
   },
   {
     nombre: "Tostador Metálico",
     precio: "$1.500 la unidad / $1.000 por mayor",
-    imagen: "/assets/tostador.png",
+    imagen: "/assets/tostadorfinal.png",
     stock: "20",
   },
 ];
