@@ -49,7 +49,6 @@ function Ofertas() {
                   alt={producto.nombre}
                   className="oferta-img"
                 />
-                <span className="oferta-precio-badge">{producto.precio}</span>
               </div>
               <h3 className="oferta-nombre">{producto.nombre}</h3>
               <p
@@ -67,6 +66,7 @@ function Ofertas() {
               >
                 <FaShoppingCart className="boton-icon" /> Lo quiero
               </a>
+              <div className="oferta-precio-final">{producto.precio}</div>
             </div>
           );
         })}

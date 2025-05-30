@@ -1,5 +1,5 @@
 .ofertas-section {
-  background: linear-gradient(to right, #f0fdf4, #ffffff); /* verde claro a blanco */
+  background: linear-gradient(to right, #f0fdf4, #ffffff);
   color: #1f2937;
   padding: 4rem 1rem;
 }
@@ -74,16 +74,7 @@
 }
 
 .oferta-precio-badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: #10b981;
-  color: white;
-  font-size: 0.95rem;
-  font-weight: 600;
-  padding: 0.3rem 0.8rem;
-  border-radius: 9999px;
-  box-shadow: 0 3px 10px rgba(16, 185, 129, 0.25);
+  display: none; /* Ocultamos el antiguo badge */
 }
 
 .oferta-nombre {
@@ -103,12 +94,12 @@
 }
 
 .stock-disponible {
-  color: #16a34a; /* verde */
+  color: #16a34a;
   font-weight: 600;
 }
 
 .stock-agotado {
-  color: #dc2626; /* rojo */
+  color: #dc2626;
   font-weight: 600;
 }
 
@@ -136,4 +127,16 @@
 
 .boton-icon {
   font-size: 1rem;
+}
+
+.oferta-precio-final {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #059669;
+  background: #d1fae5;
+  padding: 0.3rem 0.8rem;
+  border-radius: 9999px;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.2);
 }
