@@ -5,7 +5,7 @@ const productos = [
   {
     nombre: "Parche Adelgazante",
     precio: "$1.000 la unidad / $500 por mayor",
-    imagen: "/assets/parchefinal.png",
+    imagen: "/assets/parche.png",
     stock: "40",
   },
   {
